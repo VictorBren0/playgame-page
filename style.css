@@ -4,44 +4,46 @@
   box-sizing: content-box;
 }
 
-
 header {
   width: 100%;
-  height: auto;
+  height: 100px;
   background-color: #FFFFFF;
   display: flex;
   position: fixed;
-  align-items: center;
   justify-content: space-between;
   z-index: 1;
   flex-wrap: wrap;
 }
+
 .logo {
-  width: 150px;
-  height: auto;
+  width: 80px;
+  height: max-content;
   cursor: pointer;
-  margin: 30px;
+  margin: 20px;
+  margin-left: 30px;
 }
+
 .content-buttons {
   width: 20%;
-  height: 100%;
   margin: 30px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+
 }
+
 .content-buttons button {
   margin: 10px;
   flex-grow: 1;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   display: flex;
   height: 50px;
   bottom: inherit;
   align-items: flex-end;
 }
+
 .carousel-indicators li {
   border-radius: 50%;
   width: 12px;
@@ -63,6 +65,7 @@ section {
   display: flex;
   align-items: center;
 }
+
 article {
   margin-left: 3px;
   margin-right: 5px;
