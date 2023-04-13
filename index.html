@@ -9,141 +9,200 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <title>Cars</title>
+    <title>PlayGame</title>
+    <link rel="icon" href="image/Logo1.png" type="image/png">
 </head>
 
 <body>
 
     <!--Cabeçalho-->
-    <header>
+    <nav>
         <img class="logo" src="image/Logo1.png" alt="">
         <div class="content-buttons">
-            <button type="button" class="btn btn-dark">Inicio</button>
+            <a href="#Inicio">
+                <button type="button" class="btn btn-dark">Inicio</button>
+            </a>
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Produto
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Nitendo</a>
-                    <a class="dropdown-item" href="#">PlayStation</a>
-                    <a class="dropdown-item" href="#">Xbox</a>
+                    <a class="dropdown-item" href="page/nitendo.html">Nitendo</a>
+                    <a class="dropdown-item" href="page/playstation.html">PlayStation</a>
+                    <a class="dropdown-item" href="page/xbox.html">Xbox</a>
                 </div>
             </div>
-            <button type="button" class="btn btn-dark">Sobre</button>
+            <a href="#Sobre">
+                <button type="button" class="btn btn-dark">Sobre</button>
+            </a>
         </div>
-    </header>
+    </nav>
 
     <!--Carousel-->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="image/xbox.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="image/nitendo.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="image/plastation.jpg" alt="Third slide">
-            </div>
-        </div>
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-    </div>
-
-    <!--Card-->
-    <div class="container-card">
-        <article>
-            <img src="image/cardXbox.jpg" alt="">
-            <div>
-                <h2>Xbox</h2>
-                <p>O Xbox é uma linha de consoles de videogame desenvolvida pela Microsoft, conhecida por sua potência,
-                    desempenho e variedade de jogos. Oferece também serviços de entretenimento, integração com o Xbox
-                    Game Pass e uma comunidade ativa de jogadores. É uma plataforma abrangente e emocionante para
-                    jogadores de todas as idades.</p>
-                <button type="button" class="btn btn-dark">Saiba mais</button>
-            </div>
-        </article>
-        <article>
-            <img src="image/cardNitendo.jpg" alt="">
-            <div>
-                <h2>Nitendo</h2>
-                <p>O Nintendo é uma marca de consoles de videogame conhecida por sua inovação, jogos exclusivos e apelo
-                    familiar. Com títulos icônicos e uma base de fãs leal, a Nintendo é uma marca líder na indústria de
-                    jogos, oferecendo experiências únicas e cativantes para jogadores de todas as idades.</p>
-                <button type="button" class="btn btn-dark">Saiba mais</button>
-            </div>
-        </article>
-        <article>
-            <img src="image/cardPlayStation.jpg" alt="">
-            <div>
-                <h2>PlayStation</h2>
-                <p>O PlayStation é uma popular linha de consoles de videogame desenvolvida pela Sony, conhecida por sua
-                    qualidade, desempenho e biblioteca diversificada de jogos. Com gráficos impressionantes, recursos
-                    inovadores e uma comunidade vibrante de jogadores, o PlayStation é uma escolha de destaque para
-                    entusiastas de jogos em todo o mundo.</p>
-                <button type="button" class="btn btn-dark">Saiba mais</button>
-            </div>
-        </article>
-    </div>
-
-    <!--Comment-->
-    <div class="container-comments">
-        <h1>Depoimentos</h1>
-        <div id="carousel-comment" class="carousel slide" data-ride="carousel">
+    <section id="Inicio">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div>
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                    <h5>Carlos Andrade</h5>
-                    <p>"Adoro o novo site de consoles de videogame! É fácil de navegar e encontrar os consoles mais
-                        recentes. As informações detalhadas sobre os recursos e preços dos consoles são muito úteis na
-                        hora de fazer uma escolha."</p>
-                    </div>
+                    <img class="d-block w-100" src="image/xbox.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <div>
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                    <h5>Carlos Andrade</h5>
-                    <p>"O site de consoles de videogame é incrível! A interface é moderna e atraente, e as imagens dos
-                        consoles são de alta qualidade. Além disso, as avaliações dos clientes são úteis para saber o
-                        que outras pessoas pensam sobre os consoles."</p>
-                    </div>
+                    <img class="d-block w-100" src="image/nitendo.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <div>
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                    <h5>Carlos Andrade</h5>
-                    <p>"Achei o site de consoles de videogame muito informativo. As descrições detalhadas e os vídeos
-                        dos consoles me ajudaram a tomar uma decisão informada na hora de comprar o meu console dos
-                        sonhos. Estou muito satisfeito com a minha compra!"</p>
+                    <img class="d-block w-100" src="image/plastation.jpg" alt="Third slide">
                 </div>
             </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel-comment" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-comment" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
         </div>
-    </div>
+    </section>
 
-    <div>
-        <h1>Encontre-nos</h1>
-    </div>
+    <!--Card-->
+    <section id="card">
+        <div class="container-card">
+            <article>
+                <img src="image/cardXbox.jpg" alt="">
+                <div>
+                    <h2>Xbox</h2>
+                    <p>O Xbox é uma linha de consoles de videogame desenvolvida pela Microsoft, conhecida por sua
+                        potência,
+                        desempenho e variedade de jogos. Oferece também serviços de entretenimento, integração com o
+                        Xbox
+                        Game Pass e uma comunidade ativa de jogadores. É uma plataforma abrangente e emocionante para
+                        jogadores de todas as idades.</p>
+                    <button type="button" class="btn btn-dark">Saiba mais</button>
+                </div>
+            </article>
+            <article>
+                <img src="image/cardNitendo.jpg" alt="">
+                <div>
+                    <h2>Nitendo</h2>
+                    <p>O Nintendo é uma marca de consoles de videogame conhecida por sua inovação, jogos exclusivos e
+                        apelo
+                        familiar. Com títulos icônicos e uma base de fãs leal, a Nintendo é uma marca líder na indústria
+                        de
+                        jogos, oferecendo experiências únicas e cativantes para jogadores de todas as idades.</p>
+                    <button type="button" class="btn btn-dark">Saiba mais</button>
+                </div>
+            </article>
+            <article>
+                <img src="image/cardPlayStation.jpg" alt="">
+                <div>
+                    <h2>PlayStation</h2>
+                    <p>O PlayStation é uma popular linha de consoles de videogame desenvolvida pela Sony, conhecida por
+                        sua
+                        qualidade, desempenho e biblioteca diversificada de jogos. Com gráficos impressionantes,
+                        recursos
+                        inovadores e uma comunidade vibrante de jogadores, o PlayStation é uma escolha de destaque para
+                        entusiastas de jogos em todo o mundo.</p>
+                    <button type="button" class="btn btn-dark">Saiba mais</button>
+                </div>
+            </article>
+        </div>
+    </section>
 
-    <div>
+    <!--Comment-->
+    <section id="comentarios">
+        <div class="content-title">
+            <h1>Depoimentos</h1>
+        </div>
+        <div class="container-comments">
+            <div id="carousel-comment" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-content">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <h5>Fabio Silva</h5>
+                            <p>"Adoro o novo site de consoles de videogame! É fácil de navegar e encontrar os consoles
+                                mais
+                                recentes. As informações detalhadas sobre os recursos e preços dos consoles são muito
+                                úteis
+                                na
+                                hora de fazer uma escolha."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <h5>Cícero Gonçalves</h5>
+                            <p>"O site de consoles de videogame é incrível! A interface é moderna e atraente, e as
+                                imagens
+                                dos
+                                consoles são de alta qualidade. Além disso, as avaliações dos clientes são úteis para
+                                saber
+                                o
+                                que outras pessoas pensam sobre os consoles."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <h5>Daniel David</h5>
+                            <p>"Achei o site de consoles de videogame muito informativo. As descrições detalhadas e os
+                                vídeos
+                                dos consoles me ajudaram a tomar uma decisão informada na hora de comprar o meu console
+                                dos
+                                sonhos."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
-    <footer>
+    <!--Meet-->
+    <section id="Sobre">
+        <div class="content-title">
+            <h1>Encontre-nos</h1>
+        </div>
+        <div class="container-meet">
+            <div class="content-left">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.5000992723085!2d-37.075353223979704!3d-10.925545222041327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3f0b6497777%3A0x7b47144950f4af68!2sUNINASSAU%20-%20Aracaju!5e0!3m2!1spt-BR!2sbr!4v1681395065683!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="content-right">
+                <div class="container mt-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5"
+                                placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </footer>
+    <!--Footer-->
+    <section id="contatos">
+        <footer>
+            <div>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <p>Copyright © Todos os Direitos Reservados a <a href="https://github.com/VictorBren0"
+                    target="_blank">Victor Breno</a></p>
+
+        </footer>
+    </section>
 
 
 
