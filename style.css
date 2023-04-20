@@ -237,7 +237,7 @@ td {
 .Xbox .content-title-table {
   color: darkgreen;
 }
-.Nitendo{
+.Nintendo{
   height: 100vh;
   background:linear-gradient(20deg, brown, #FFFFFF);
   display: flex;
@@ -245,10 +245,10 @@ td {
   flex-direction: column;
 }
 
-.Nitendo .content-title-table {
+.Nintendo .content-title-table {
   color: red;
 }
-.Nitendo .content-title-table div {
+.Nintendo .content-title-table div {
   width: 100%;
   padding: 10px;
   text-align: center;
